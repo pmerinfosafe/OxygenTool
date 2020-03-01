@@ -1,5 +1,3 @@
-# OxygenTool
-氧气工具，为java工作提供便利
 # Java工具分享——httpclinet封装
 
 ## 一。背景说明
@@ -18,7 +16,7 @@
 
 ### 2. 简化HTTPClient
 
- 	通过对HTTPClient的封装（默认配置http及https请求，请求的连接，读取等超时），可以更加轻松的管理对应cookie，代理，请求池，对请求方式进行更加简化的封装，自动对cookie进行管理
+​	通过对HTTPClient的封装（默认配置http及https请求，请求的连接，读取等超时），可以更加轻松的管理对应cookie，代理，请求池，对请求方式进行更加简化的封装，自动对cookie进行管理
 
 ### 3. 封装请求池
 
@@ -26,7 +24,7 @@
 
 ### 4. 简化请求返回
 
- 	HTTPResponse封装了对返回体中重点内容的提取，如：状态码，body，重点向url，下载到的entity，编码等
+​	HTTPResponse封装了对返回体中重点内容的提取，如：状态码，body，重点向url，下载到的entity，编码等
 
 代码地址:https://github.com/pmerinfosafe/OxygenTool
 
