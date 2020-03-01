@@ -3,17 +3,18 @@ package com.oxygen.util;
 import java.util.HashMap;
 import java.util.Map;
 
+
 /**
- * 定义业务中的常见的异常代码
- * 错误码长度为5位
- * @author j.x
- *
- */
+ * @program: qxygenTool-通用
+ * @description: 定义业务中的常见的异常代码，错误码长度为5位
+ * @author: pmer_infoSafe
+ * @create: 2019-11-14 14:46
+ **/
 public class InnoErrorCode {
 	
 	public static Map<String,String> errors = new HashMap<String,String>();
 	
-	/***********华丽分割线，社保业务错误代码开始（以10打头）************************************/
+	/***********华丽分割线，业务错误代码开始（以10打头）************************************/
 	/**
 	 * 10001：网络异常
 	 */

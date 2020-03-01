@@ -1,13 +1,11 @@
 package com.oxygen.util;
 
 /**
- * @program: spiderSecurityservice
- * @description: 异常打印类
- * @author: Mr.Yang
- * @create: 2019-03-25 17:49
+ * @program: qxygenTool-通用
+ *  * @description: 异常打印类
+ * @author: pmer_infoSafe
+ * @create: 2019-11-14 14:46
  **/
-
-
 public class ExcpUtil {
     //打印异常堆栈信息
     public static String getStackTraceString(Throwable ex) {//(Exception ex) {

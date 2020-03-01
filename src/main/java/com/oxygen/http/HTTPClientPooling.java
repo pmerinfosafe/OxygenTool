@@ -22,7 +22,12 @@ import java.security.NoSuchAlgorithmException;
 import java.security.cert.CertificateException;
 import java.security.cert.X509Certificate;
 
-
+/**
+ * @program: qxygenTool-http
+ * @description: 请求池
+ * @author: pmer_infoSafe
+ * @create: 2019-11-14 14:46
+ **/
 public class HTTPClientPooling {
 
     public PoolingHttpClientConnectionManager getConnMgr() {

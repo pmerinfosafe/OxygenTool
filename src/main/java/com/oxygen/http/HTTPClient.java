@@ -3,11 +3,13 @@ package com.oxygen.http;
 import java.io.IOException;
 import java.net.URISyntaxException;
 
+
 /**
- * HTTPClient interface
- *
- * @since 1.0.0
- */
+ * @program: qxygenTool-http
+ * @description: interface
+ * @author: pmer_infoSafe
+ * @create: 2019-11-14 14:46
+ **/
 public interface HTTPClient {
 
     /**

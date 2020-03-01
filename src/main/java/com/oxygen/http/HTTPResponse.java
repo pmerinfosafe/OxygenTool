@@ -4,7 +4,12 @@ import org.apache.http.entity.BufferedHttpEntity;
 
 import java.util.HashMap;
 
-
+/**
+ * @program: qxygenTool-http
+ * @description: response封装
+ * @author: pmer_infoSafe
+ * @create: 2019-11-14 14:46
+ **/
 public class HTTPResponse {
 
     public HTTPRequest request;

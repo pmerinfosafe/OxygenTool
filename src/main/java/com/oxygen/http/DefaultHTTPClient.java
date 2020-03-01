@@ -51,7 +51,12 @@ import java.security.cert.CertificateException;
 import java.security.cert.X509Certificate;
 import java.util.*;
 
-
+/**
+ * @program: qxygenTool-http
+ * @description: http执行类
+ * @author: pmer_infoSafe
+ * @create: 2019-11-14 14:46
+ **/
 public class DefaultHTTPClient implements HTTPClient {
 
     private HttpHost proxy;

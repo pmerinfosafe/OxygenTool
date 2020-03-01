@@ -5,7 +5,12 @@ import org.apache.http.HttpEntity;
 import java.util.HashMap;
 import java.util.Map;
 
-
+/**
+ * @program: qxygenTool-http
+ * @description: request封装
+ * @author: pmer_infoSafe
+ * @create: 2019-11-14 14:46
+ **/
 public class HTTPRequest {
 
     //请求URL：http://srh.bankofchina.com/search/whpj/search.jsp

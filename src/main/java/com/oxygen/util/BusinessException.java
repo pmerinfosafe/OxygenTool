@@ -1,5 +1,10 @@
 package com.oxygen.util;
-
+/**
+ * @program: qxygenTool-通用
+ * @description: 业务异常
+ * @author: pmer_infoSafe
+ * @create: 2019-11-14 14:46
+ **/
 public class BusinessException extends RuntimeException{
     private static final long serialVersionUID = 1L;
     String errorCode = "10000";

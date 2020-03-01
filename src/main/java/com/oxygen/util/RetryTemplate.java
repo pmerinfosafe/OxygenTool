@@ -1,7 +1,6 @@
 package com.oxygen.util;
 
-import com.joy.error.BusinessException;
-import com.joy.httpclient.HTTPResponse;
+import com.oxygen.http.HTTPResponse;
 import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -10,13 +9,11 @@ import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutorService;
 
 /**
- * @program: spider-api
+ * @program: qxygenTool-http
  * @description: 重试类
- * @author: Mr.Yang
+ * @author: pmer_infoSafe
  * @create: 2019-11-14 14:46
  **/
-
-
 public abstract class RetryTemplate {
     protected static final Logger log = LoggerFactory.getLogger(RetryTemplate.class);
 
@@ -77,10 +74,10 @@ public abstract class RetryTemplate {
         String html = response.body;
         if ((StringUtils.isBlank(html) && judgeStatus(status) > 3) || html.contains("服务器繁忙，请稍后再试") || html.contains("404 - Not Found")
                 || html.contains("504 Gateway")) {
-            throw new BusinessException(InnoErrorCode.OFFICIAL_ERROR_MESSAGE, "官网已经被查询的人团团围住服务不过来了，请您稍后再试！");
+            throw new BusinessException(InnoErrorCode.NET_IS_FAIL);
         }
         if (judgeStatus(status) > 3) {
-            throw new BusinessException(InnoErrorCode.OFFICIAL_ERROR_MESSAGE, "官网返回异常，请您稍候重试！");
+            throw new BusinessException(InnoErrorCode.NET_IS_FAIL);
         }
     }
 
@@ -142,7 +139,7 @@ public abstract class RetryTemplate {
         } else if (ans instanceof Exception) {
             Exception exception = (Exception) ans;
             log.error("抓取时出现异常" + ExcpUtil.getStackTraceString(exception));
-            throw new BusinessException(InnoErrorCode.OUTER_SERVICE_ERROR, "官网连接失败,请重试");
+            throw new BusinessException(InnoErrorCode.NET_IS_FAIL);
         }
 
     }
