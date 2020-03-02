@@ -1,4 +1,4 @@
-# Java工具分享——httpclinet封装
+# Java工具分享——httpclient封装
 
 ## 一。背景说明
 
