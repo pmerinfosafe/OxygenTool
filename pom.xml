@@ -10,7 +10,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <httpClient.version>4.5.7</httpClient.version>
+        <httpClient.version>4.5.13</httpClient.version>
         <logback.version>1.2.3</logback.version>
         <slf4j.version>1.7.21</slf4j.version>
     </properties>
